@@ -1,0 +1,483 @@
+#resume {
+    min-width: 320px;
+    max-width: 720px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    #header {
+        padding: 0.5rem;
+        background-color: rgb(50, 60, 75);
+        color: white;
+        .flex {
+            #picture__id {
+                display: inline;
+                width: 0.8in;
+                margin-left: 0.5rem;
+                border-radius: 50%;
+            }
+            div {
+                display: inline;
+                height: fit-content;
+                margin-left: 1rem;
+                margin-right: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                text-align: left;
+                #name {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1rem;
+                }
+                #bachelors {
+                    font-size: 0.8rem;
+                    line-height: 0.8rem;
+                }
+                span {
+                    display: block;
+                    font-size: 0.5rem;
+                    font-weight: 200;
+                }
+                #specialization {
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    line-height: 0.8rem;
+                }
+            }
+        }
+    }
+    #main {
+        padding: 0 0.8rem;
+        section {
+            margin: 2rem auto 0 auto;
+            .section__header {
+                padding-top: 0.3rem;
+                padding-bottom: 0.3rem;
+
+                background-color: rgb(50, 60, 75);
+
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: 0.08rem;
+                line-height: 1rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            ul {
+                margin-top: 0.3rem;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+                list-style-type: none;
+                li {
+                    margin: 0 0 0.3rem 0;
+                    padding: 0;
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    letter-spacing: 0.08rem;
+                    line-height: 0.8rem;
+                    
+                    color: rgb(50, 60, 75);
+                }
+            }
+        }
+        #experience {
+            table {
+                width: 100%;
+                margin-top: 0.1rem;
+                td {
+                    padding: 0;
+                    margin: 0;
+                    vertical-align: top;
+                }
+                .job__position {
+                    width: 60%;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    letter-spacing: 0.08rem;
+                    line-height: 0.7rem;
+                    color: rgb(50, 60, 75);
+                    text-transform: uppercase;
+                }
+                .job__date {
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                    letter-spacing: 0.05rem;
+                    line-height: 0.7rem;
+                    color: rgb(50, 60, 75);
+                    text-transform: uppercase;
+                    text-align: right;
+                    i {
+                        margin-right: 0.1rem;
+                    }
+                }
+                .job__company {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    letter-spacing: 0.08rem;
+                    line-height: 0.7rem;
+                    color: rgb(50, 60, 75);
+                    text-transform: uppercase;
+                }
+            }
+        }
+        #projects {
+            ul {
+                margin-top: 0.5rem;
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+            .project {
+                &__name {
+                    display: inline;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+                &__description {
+                    display: inline;
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                }
+                &__role {
+                    display: inline;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                }
+                &__link {
+                    display: block;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    font-style: italic;
+                    text-decoration: none;
+                    color: rgb(50, 60, 75);
+                    overflow-wrap: break-word;
+                    cursor: pointer;
+                    i {
+                        margin-right: 0.2rem;
+                    }
+                }
+                &__link::before {
+                    margin-right: 0.1rem;
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 0.7rem;
+                    font-style: normal !important;
+                    content: "\f0c1";
+                }
+            }
+        }
+        #education {
+            .education {
+                &__degree {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    line-height: 0.8rem;
+                }
+                &__degree::before {
+                    margin-right: 0.1rem;
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 0.7rem;
+                    font-style: normal !important;
+                    content: "\f19d";
+                }
+                &__specialization {
+                    font-size: 0.7rem;
+                    font-weight: 400;
+                    line-height: 0.7rem;
+                }
+                &__university {
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                    line-height: 0.7rem;
+                }
+                &__date {
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                    line-height: 0.7rem;
+                }
+            }
+        }
+    }
+    #extras {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        color: #303030;
+        section {
+            padding: 0.5rem 1rem;
+            .section__header {
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            ul {
+                list-style-type: none;
+            }
+        }
+        #certifications {
+            background-color: rgb(140, 150, 170);
+            ul {
+                li {
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    .certificate__date {
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                    }
+                }
+                li::before {
+                    margin-right: 0.2rem;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    font-style: normal !important;
+                    content: "\f0a3";
+                }
+            }
+        }
+        .flex {
+            padding-top: 0.8rem;
+            #skills, #softwares {
+                display: inline-block;
+                width: 50%;
+                padding: 0.3rem 0.8rem;
+                ul {
+                    li {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #skills {
+                text-align: right;
+                border-right: solid 1px #d0d0d0;
+            }
+        }
+        #language {
+            margin-top: 0.5rem;
+            .section__header {
+                text-align: center;
+            }
+            ul {
+                margin-top: 0.3rem;
+                text-align: center;
+                font-size: 0.8rem;
+                li {
+                    display: inline;
+                    padding: 0.5rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    footer {
+        padding: 1rem 1rem;
+        background-color: rgb(50, 60, 75);
+
+        font-size: 0.5rem;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media (min-width: 321px) {
+    #resume {
+        #header {
+            .flex {
+                #picture__id {
+                    margin-left: auto;
+                }
+                div {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    #resume {
+        #header {
+            .flex {
+                #picture__id {
+                    width: 1.25in;
+                    margin-left: auto;
+                }
+                div {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 641px) {
+    #resume {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 1rem 0.1rem rgba(50, 60, 75, 0.2%);
+        #header {
+            .flex {
+                #picture__id {
+                    width: 1.75in;
+                }
+                div {
+                    #name {
+                        font-size: 2rem;
+                        line-height: 1.8rem;
+                    }
+                    #bachelors {
+                        font-size: 1.5rem;
+                        line-height: 1rem;
+                    }
+                    span {
+                        font-size: 1rem;
+                        line-height: 1.3rem;
+                    }
+                    #specialization {
+                        font-size: 1.3rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+        #main {
+            padding: 0 1rem;
+            section {
+                .section__header {  
+                    font-size: 1.3rem;
+                    line-height: 1.3rem;
+                }
+                ul {
+                    li {
+                        font-size: 1rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            #experience {
+                table {
+                    margin-top: 0.3rem;
+                    td {
+                        vertical-align: middle;
+                    }
+                    .job__position {
+                        width: 70%;
+                        font-size: 1.3rem;
+                        line-height: 1rem;
+                    }
+                    .job__date {
+                        font-size: 1rem;
+                        line-height: 1rem;
+                    }
+                    .job__company {
+                        font-size: 1rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            #projects {
+                ul {
+                    margin-top: 0.8rem;
+                }
+                .project {
+                    &__name {
+                        font-size: 1rem;
+                    }
+                    &__description {
+                        font-size: 1rem;
+                    }
+                    &__role {
+                        font-size: 1rem;
+                    }
+                    &__link {
+                        font-size: 1rem;
+                    }
+                    &__link::before {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #education {
+                ul {
+                    margin-top: 1rem;
+                    li {
+                        .education {
+                            &__degree {
+                                font-size: 1.3rem;
+                                line-height: 1rem;
+                            }
+                            &__degree::before {
+                                font-size: 1rem;
+                            }
+                            &__specialization {
+                                font-size: 1rem;
+                                line-height: 1rem;
+                            }
+                            &__university {
+                                font-size: 1rem;
+                                line-height: 1rem;
+                            }
+                            &__date {
+                                font-size: 1rem;
+                                line-height: 1rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        #extras {
+            section {
+                padding: 1rem 1rem;
+                .section__header {
+                    font-size: 1.3rem;
+                }
+            }
+            #certifications {
+                ul {
+                    li {
+                        font-size: 1rem;
+                        .certificate__date {
+                            font-size: 1rem;
+                        }
+                    }
+                    li::before {
+                        margin-left: 0.3rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .flex {
+                padding-top: 1.3rem;
+                #skills, #softwares {
+                    ul {
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            #language {
+                margin-top: 0.8rem;
+                ul {
+                    margin-top: 0.5rem;
+                    text-align: center;
+                    font-size: 1rem;
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        footer {   
+            padding: 2rem 0;
+            font-size: 1rem;
+        }
+    }
+}
